@@ -30,7 +30,7 @@
 
     管理項目は編集しないようにして下さい。
 
-## 3. Azure Storage Explorer を使う
+## Op. Azure Storage Explorer を使う
 
 デスクトップアプリケーションである **Azure Storage Explorer** を使って、Azure Cosmos DBのデータを操作することができます（プレビュー）。Windows、Linux、および MAC バージョンがサポートされています。
 
