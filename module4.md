@@ -60,7 +60,7 @@
         "Key": "Azureポータルから取得したプライマリキー",
         "DatabaseId": "コレクション作成時に指定したDatabase id",
         "CollectionId": "コレクション作成時に指定したCollection id",
-        "REGION_NAME": "Cosmos DBアカウント作成時に指定したリージョン名(※1)"
+        "Region": "Cosmos DBアカウント作成時に指定したリージョン名(※1)"
     }
     ```
     ※1) リージョン名は、 指定された文字列を入れる必要があります。
@@ -91,6 +91,6 @@ cp.PreferredLocations.Add("Japan West");
 _client = new DocumentClient({ENDPOINT}, {KEY}, cp);
 ```
 
-ハンズオン用のソースコードでは、設定ファイル```appsettings.Development.json```からリージョン名を取得するようにしています。そうすることで、App Serviceの環境変数からリージョン名を動的に取得することが可能となります。
+ハンズオン用のソースコードでは、設定ファイル```appsettings.Development.json```からリージョン名を取得するようにしています。そうすることで、App Serviceのアプリケーション設定にて設定値をオーバーライドすることが可能となります。
 
 ```PreferredLocations```を設定しなかった場合は、Cosmos DBを複数の地域にグローバル分散させても、アプリケーションからは書き込みリージョンにしかアクセスされません。
