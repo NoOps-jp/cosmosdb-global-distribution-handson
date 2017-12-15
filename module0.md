@@ -10,6 +10,6 @@
 
 ## 2. リソースグループの作成
 
-今回のハンズオンで作成する各種Azureリソースをまとめて管理できるようにリソースグループを新規に作成します。
+今回のハンズオンで作成する各種Azureリソースをまとめて管理できるようにリソースグループを新規に作成します。
 
 * 参考手順: [ポータルを使用した Azure リソースの管理 - リソース グループの管理](https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/resource-group-portal#manage-resource-groups)
