@@ -29,7 +29,7 @@
 
 1. Add Collection画面では以下のように設定して下さい。
 
-    * Database id: **ToDoList**
+    * Database id: **Todo**
     * Collection id: **Items**
     * Storage capacity: **Fixed (10GB)** を選択
     * Throughput: **400**
