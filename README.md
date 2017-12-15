@@ -7,3 +7,5 @@
 |Module2|Azure Cosmos DBの操作|[manual(ja)](module2.md)|
 |Module3|複数リージョンへの分散|[manual(ja)](module3.md)|
 |Module4|Visual Studio による Cosmos DB接続クライアントアプリ (.NET Core版)の実行|[manual(ja)](module4.md)|
+|Module5|アプリケーションの Azure App Service へのデプロイ|[manual(ja)](module5.md)|
+|Module6|Traffic Managerを導入してアプリケーションをディザスタリカバリー対応にする|[manual(ja)](module6.md)|
