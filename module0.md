@@ -2,7 +2,7 @@
 
 ## 1. Azureサブスクリプション
 
-このハンズオンで利用できるMicrosoft Azureのサブスクリプションを用意して下さい。
+このハンズオンで利用できるMicrosoft Azureのサブスクリプションを用意して下さい。
 
 * サブスクリプションをお持ちでない方: [Azure無料アカウントの作成](https://azure.microsoft.com/ja-jp/free/)
 
