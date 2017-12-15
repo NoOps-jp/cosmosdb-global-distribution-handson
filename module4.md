@@ -1,4 +1,4 @@
-# Visual Studio による Cosmos DB クライアントアプリケーション (.NET Core版)の開発
+# Visual Studio による Cosmos DB接続クライアントアプリ (.NET Core版)の実行
 
 ## 1. 開発環境の確認
 
@@ -21,7 +21,7 @@
 
 * コマンドプロンプトまたはターミナルにて以下を実行します。
 
-    ```
+    ```bash
     $ dotnet --version
     ```
 
@@ -31,11 +31,9 @@
 
 * Gitで入手する
 
-    * クローンURL: https://github.com/zenarc/aajp1218-todo.git
-
     プロジェクト保存用ディレクトリに移動して以下を実行して下さい。
 
-    ```
+    ```bash
     $ git clone https://github.com/zenarc/aajp1218-todo.git
     ```
 
@@ -49,14 +47,14 @@
 
 1. Azureポータルの**Azure Cosmos DB アカウント** ブレードで **キー** をクリックし以下のCosmos DB接続情報を手元にコピーしておきます。
 
-    * URI: 例) ```https://xxx.documents.azure.com:443/```
-    * プライマリ キー: 例) ```xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxAbcdEfghijKlmn123Ew==```
+    * URI: ```(例) https://xxx.documents.azure.com:443/```
+    * プライマリ キー: 例) ```(例) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxAbcdEfghijKlmn123Ew==```
 
 1. Visual Studioからソースコードのディレクトリにあるソリューションファイル```aajp1218.sln```を開きます。
 
 1. ```appsettings.Development.json```を開き、以下のように接続用の各種文字列を変更して保存します。
 
-    ```
+    ```json
     "AppConfiguration":  {
         "Endpoint": "Azureポータルから取得したURI",
         "Key": "Azureポータルから取得したプライマリキー",
@@ -75,3 +73,24 @@
 1. Visual Studioにてデバッグを実行し、ブラウザに以下のような画面が表示されれば問題ありません。
 
     ![デバッグ実行結果](./images/module4-1.png)
+
+## Op. アプリケーションを複数リージョンに対応させる
+
+複数リージョンにデプロイしたCosmos DBの場合、読み取りリージョンをアプリケーションに最も近いリージョンに向けることが可能です。
+
+.NET Coreのアプリケーションでは```DocumentClient```生成時に以下のように```PreferredLocations```プロパティを追加し、リージョン名を設定するようにして下さい。
+
+```c#
+ // 接続ポリシーの作成
+ConnectionPolicy cp = new ConnectionPolicy();
+
+// このAppのリージョンを追加（西日本リージョンを指定する例）
+cp.PreferredLocations.Add("Japan West");
+
+// CosmosDB接続クライアント作成
+_client = new DocumentClient({ENDPOINT}, {KEY}, cp);
+```
+
+ハンズオン用のソースコードでは、設定ファイル```appsettings.Development.json```からリージョン名を取得するようにしています。そうすることで、App Serviceの環境変数からリージョン名を動的に取得することが可能となります。
+
+```PreferredLocations```を設定しなかった場合は、Cosmos DBを複数の地域にグローバル分散させても、アプリケーションからは書き込みリージョンにしかアクセスされません。
