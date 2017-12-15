@@ -11,12 +11,12 @@
     ```JSON
     {
         "name": "サンプルデータ１",
-        "description": "これは1件目のサンプルデータです。",
+        "description": "これは1件目のサンプルデータです。",
         "isComplete": false
     }
     ```
 
-    ```id```はJSONで記述を省略すると自動で採番されます。```name```と```description```の値は任意の文字列を入れて構いません。
+    ```id```はJSONで記述を省略すると自動で採番されます。```name```と```description```の値は任意の文字列を入れて構いません。
 
 1. **Documents** タブで、**Save**アイコンをクリックします。
 
@@ -24,14 +24,14 @@
 
 1. 追加されたデータは、**Documents** タブのリストからidを選択して確認することができます。
 
-    ```_rid```などアンダースコアから始まる項目は、Cosmos DBが内部で管理するデータです。
+    ```_rid```などアンダースコアから始まる項目は、Cosmos DBが内部で管理するデータです。
 
-1. そのままJSONを編集し、**Save**アイコンをクリックすると、データを変更できます。
+1. そのままJSONを編集し、**Save**アイコンをクリックすると、データを変更できます。
 
     管理項目は編集しないようにして下さい。
 
 ## Op. Azure Storage Explorer を使う
 
-デスクトップアプリケーションである **Azure Storage Explorer** を使って、Azure Cosmos DBのデータを操作することができます（プレビュー）。Windows、Linux、および MAC バージョンがサポートされています。
+デスクトップアプリケーションである **Azure Storage Explorer** を使って、Azure Cosmos DBのデータを操作することができます（プレビュー）。Windows、Linux、および MAC バージョンがサポートされています。
 
 * 利用手順: [Azure Cosmos DB を Azure Storage Explorer で管理する (プレビュー)](https://docs.microsoft.com/ja-jp/azure/cosmos-db/tutorial-documentdb-and-mongodb-in-storage-explorer)
