@@ -39,3 +39,6 @@
     ![Collection作成画面](./images/module1-1.png)
 
 1. **OK** をクリックします。
+
+---
+[Back](module0.md) | [Next](module2.md)

@@ -34,12 +34,12 @@
     プロジェクト保存用ディレクトリに移動して以下を実行して下さい。
 
     ```bash
-    $ git clone https://github.com/zenarc/aajp1218-todo.git
+    $ git clone https://github.com/zenarchitects/cosmosdb-dotnetcore-todoapp.git
     ```
 
 * zipをダウンロードする
 
-    * リポジトリ: https://github.com/zenarc/aajp1218-todo
+    * リポジトリ: https://github.com/zenarchitects/cosmosdb-dotnetcore-todoapp
 
     Githubリポジトリの **clone or download**ボタンから **Download ZIP**を実行し、適当なディレクトリに解凍して下さい。
 
@@ -94,3 +94,6 @@ _client = new DocumentClient({ENDPOINT}, {KEY}, cp);
 ハンズオン用のソースコードでは、設定ファイル```appsettings.Development.json```からリージョン名を取得するようにしています。そうすることで、App Serviceのアプリケーション設定にて設定値をオーバーライドすることが可能となります。
 
 ```PreferredLocations```を設定しなかった場合は、Cosmos DBを複数の地域にグローバル分散させても、アプリケーションからは書き込みリージョンにしかアクセスされません。
+
+---
+[Back](module3.md) | [Next](module5.md)

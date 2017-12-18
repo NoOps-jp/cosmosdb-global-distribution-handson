@@ -35,3 +35,6 @@
 デスクトップアプリケーションである **Azure Storage Explorer** を使って、Azure Cosmos DBのデータを操作することができます（プレビュー）。Windows、Linux、および MAC バージョンがサポートされています。
 
 * 利用手順: [Azure Cosmos DB を Azure Storage Explorer で管理する (プレビュー)](https://docs.microsoft.com/ja-jp/azure/cosmos-db/tutorial-documentdb-and-mongodb-in-storage-explorer)
+
+---
+[Back](module1.md) | [Next](module3.md)
