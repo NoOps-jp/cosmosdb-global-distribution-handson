@@ -12,8 +12,8 @@
     * OS: Windows
     * App Serviceプラン/場所
         - **新規作成** を選択
-        - App Serviceプラン: 任意の文字列（半角英数小文字とハイフンのみ）
-        - 場所: Cosmos DBの **書き込みリージョン** と同一リージョン
+        - App Serviceプラン: 任意のユニークな文字列（半角英数小文字とハイフンのみ）このIDが接続文字列のURLになる。例）aajp1218-asp-east
+        - 場所: Cosmos DBの **書き込みリージョン** と同一リージョン 例）Japan East
         - 価格レベル: S1 Standard (Traffic Managerに対応させるためStandard以上が必須)
     * Application Insights: オフ
 
@@ -29,14 +29,14 @@
 
 1. Web App作成画面では以下を参考に設定して下さい。
 
-    * アプリ名: 任意の文字列（半角英数小文字とハイフンのみ）
+    * アプリ名: 任意の文字列（半角英数小文字とハイフンのみ） ※ プライマリとは別のアプリとして作成
     * サブスクリプション: ハンズオン用に用意したサブスクリプション
     * リソースグループ: [module0](module0.md)で作成したリソースグループを選択（新規作成しない）
     * OS: Windows
     * App Serviceプラン/場所
         - **新規作成** を選択
-        - App Serviceプラン: 任意の文字列（半角英数小文字とハイフンのみ）
-        - 場所: Cosmos DBの **読み取りリージョン** と同一リージョン
+        - App Serviceプラン: 任意のユニークな文字列（半角英数小文字とハイフンのみ）例）aajp1218-asp-west
+        - 場所: Cosmos DBの **読み取りリージョン** と同一リージョン 例）Japan West
         - 価格レベル: S1 Standard (Traffic Managerに対応させるためStandard以上が必須)
     * Application Insights: オフ
 

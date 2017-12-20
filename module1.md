@@ -6,8 +6,8 @@
 
 1. **新規アカウント** 作成画面では以下を参考に設定して下さい。
 
-    * ID: 任意の文字列（半角英数小文字とハイフンのみ）
-    * API: **SQL** を選択
+    * ID: 任意のユニークな文字列（半角英数小文字とハイフンのみ）このIDが接続文字列のURLになる。
+    * API: **SQL** を選択（[What's SQL API](https://docs.microsoft.com/ja-jp/azure/cosmos-db/sql-api-introduction))）
     * サブスクリプション: ハンズオン用に用意したサブスクリプション
     * リソースグループ: [module0](module0.md)で作成したリソースグループを選択（新規作成しない）
     * 場所: 東日本か西日本（選択できなければ他の場所、できればリソースグループの場所と同一にする）
@@ -30,9 +30,9 @@
 1. Add Collection画面では以下のように設定して下さい。
 
     * Database id: **Todo**
-    * Collection id: **Items**
+    * Collection id: **Items** ※ Collectionがデータ格納/課金の単位
     * Storage capacity: **Fixed (10GB)** を選択
-    * Throughput: **400**
+    * Throughput: **400** ※ デフォルトで 5000 が設定されているので注意
 
     大文字、小文字の使い分けは任意ですが、クライアントアプリケーションの設定値等にも影響しますので、注意して下さい。
 
