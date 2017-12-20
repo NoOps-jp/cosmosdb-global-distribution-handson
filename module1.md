@@ -7,7 +7,7 @@
 1. **新規アカウント** 作成画面では以下を参考に設定して下さい。
 
     * ID: 任意のユニークな文字列（半角英数小文字とハイフンのみ）このIDが接続文字列のURLになる。
-    * API: **SQL** を選択（SQL = DocumentDB API を指す）
+    * API: **SQL** を選択（[What's SQL API](https://docs.microsoft.com/ja-jp/azure/cosmos-db/sql-api-introduction))）
     * サブスクリプション: ハンズオン用に用意したサブスクリプション
     * リソースグループ: [module0](module0.md)で作成したリソースグループを選択（新規作成しない）
     * 場所: 東日本か西日本（選択できなければ他の場所、できればリソースグループの場所と同一にする）
